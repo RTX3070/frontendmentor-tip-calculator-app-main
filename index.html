@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="Logo" class="logo__svg">
+  </div>
+
+  <main class="tip_calculator">
+    <div class="col_1">
+      <div class="bill_field">
+        <p class="bill_field__title">Bill</p>
+        <label for="bill">Bill:</label>
+        <input type="number" name="bill" id="bill" placeholder="0" min="0">
+        <img src="./images/icon-dollar.svg" alt="" class="bill_field__icon-dollar">
+      </div>
+
+      <div class="tips">
+        <p class="tips__title">Select Tip &percnt;</p>
+        <a href="#" class="tips__tip-btn" data-tip="5">5&percnt;</a>
+        <a href="#" class="tips__tip-btn" data-tip="10">10&percnt;</a>
+        <a href="#" class="tips__tip-btn" data-tip="15">15&percnt;</a>
+        <a href="#" class="tips__tip-btn" data-tip="25">25&percnt;</a>
+        <a href="#" class="tips__tip-btn" data-tip="50">50&percnt;</a>
+
+        <div class="tip_field">
+          <label for="tip">Tip:</label>
+          <input type="number" name="tip" id="tip" placeholder="Custom">
+        </div>
+      </div>
+
+      <div class="people_field">
+        <p class="people_field__title">Number of People <span class="people_field__warning">Can't be zero</span></p>
+        <label for="people">People:</label>
+        <input type="number" name="people" id="people" placeholder="0" min="0" step="1">
+        <img src="./images/icon-person.svg" alt="" class="people_field__icon-person">
+      </div>
+    </div>
+
+    <div class="col_2">
+      <div class="tip_result">
+        <div class="tip_plate">
+          <p>Tip Amount</p>
+          <p>/ person</p>
+        </div>
+
+        <span class="tip_result__tip-amount">&dollar;0.00</span>
+      </div>
+
+      <div class="total_result">
+        <div class="total_plate">
+          <p>Total</p>
+          <p>/ person</p>
+        </div>
+
+        <span class="total_result__total-amount">&dollar;0.00</span>
+      </div>
+
+      <button class="col_2__reset-btn">Reset</button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/RTX3070" target="_blank">RTX3070</a>.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
